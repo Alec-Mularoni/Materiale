@@ -41,5 +41,3 @@ nuovo_dizionario = mio_dizionario.copy()
 chiavi = ['a', 'b', 'c']
 nuovo_diz = dict.fromkeys(chiavi, 0)
 # nuovo_diz sarà {'a': 0, 'b': 0, 'c': 0}
-
-# Fine del file con i 10 metodi più utili per i dizionari.
