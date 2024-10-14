@@ -1,17 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''class Punto:
+class Punto:
     def __init__(self, x, y):
         """__init__ è usato per inizializzare un oggetto quando viene creato."""
         self.x = x
@@ -32,9 +19,8 @@
     def __eq__(self, altro_punto):
         """__eq__ è usato per confrontare due oggetti con l'operatore ==."""
         return self.x == altro_punto.x and self.y == altro_punto.y
-        '''
+        
 
-'''
 class Prodotto:
     def __init__(self, nome, prezzo):
         """Inizializza il prodotto con nome e prezzo."""
@@ -139,4 +125,3 @@ if __name__ == "__main__":
     # Somma dei prezzi di due prodotti (__add__)
     somma_prezzi = mela + banana
     print(f"\nSomma del prezzo di mela e banana: €{somma_prezzi:.2f}")
-'''
