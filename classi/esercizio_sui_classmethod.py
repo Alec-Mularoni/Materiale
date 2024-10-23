@@ -23,8 +23,6 @@ class Prodotto:
 Prodotto.aggiungi_prod('Scarpe', 59.99, 10)
 Prodotto.aggiungi_prod('Maglietta', 19.99, 20)
 
-#
-
 # Visualizzazione dei prodotti
 Prodotto.mostra_prodotti()
 

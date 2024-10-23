@@ -106,7 +106,7 @@ if __name__ == "__main__":
     # Creazione di un elenco di dipendenti
     dipendenti = []
 
-    # Creazione di due dipendenti
+    # Creazione di due dipendenti (ISTANZE)
     dip1 = Dipendenti("Mario", "Rossi", 30, 30000)
     dip2 = Dipendenti("Luigi", "Verdi", 40, 35000, "Senior")
 
@@ -129,44 +129,4 @@ if __name__ == "__main__":
     # Riepilogo dei dipendenti
     print(Dipendenti.riepilogo_dipendenti(dipendenti))
 
-
-# CREAZIONE DI OGGETTI (ISTANZE DELLA CLASSE)
-# Qui stiamo creando due oggetti della classe Dipendenti.
-# Quando chiamiamo Dipendenti("John", "Smith", 34), il metodo __init__ viene eseguito e crea un nuovo dipendente
-# con nome "John", cognome "Smith", e età 34. Lo stesso avviene per "jacke" e "Will".
-dip1 = Dipendenti("John", "Smith", 34)  # Prima istanza della classe
-dip2 = Dipendenti("jacke", "Will", 55)  # Seconda istanza della classe
-dip1.print_nome()
-
-dip1.dipendente_raise = 1.07
-Dipendenti.dipendente_raise = 1.09 
-dip1.cambio_valore_raise(1.08)
-print(dip2.dipendente_raise)
-""" dip1.cambio_valore_raise(1.07)
-print(dip1.dipendente_raise)
-Dipendenti.cambio_valore_raise(1.10)
-print(dip1.dipendente_raise) """
-
-# Ogni istanza ha i propri attributi di istanza:
-print(dip1.dipendente_raise)
-Dipendenti.cambio_valore_raise(1.06)
-
-  # Stampa "John"
-  # Stampa "Smith.John@company.com"
-print(dip2.dipendente_raise)  # Stampa "Will.jacke@company.com"
-
-# UTILIZZO DEI METODI DI CLASSE E DUNDER METHODS
-# Eseguiamo il metodo stringa_mail() che è un metodo di classe e il metodo __repr__.
-""" print(Dipendenti.stringa_mail())  # Stampa "mia mail"
-print(repr(dip1))  # Stampa "Ciao John!" """
-
-
-
-""" p1 = Punto(1, 2)
-p2 = Punto(3, 4)
-nuovo_p = p1 + p2
-Dipendeti.stringa_mail()
-print(p1[0])
-#print(dip1)
-#print(dip2.saluta()) """
 
