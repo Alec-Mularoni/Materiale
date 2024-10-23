@@ -73,5 +73,5 @@ def main():
             break
         else:
             print("Opzione non valida. Riprova.")
-print(__name__)
+main()
 

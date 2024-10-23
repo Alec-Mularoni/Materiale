@@ -105,3 +105,4 @@ def somma_due_numeri(a, b):
 help(somma_due_numeri)
 # Questo mostrerà: "Questa funzione restituisce la somma di due numeri."
 
+

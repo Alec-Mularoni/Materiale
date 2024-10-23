@@ -53,7 +53,7 @@ def somma():
     print(10 + 12)
 
 # Chiamiamo direttamente la funzione decorata
-somma()
+#somma()
 
 """
 SPIEGAZIONE DEL CODICE:
@@ -149,3 +149,26 @@ SPIEGAZIONE DEL CODICE:
 Utilizzando `*args` e `**kwargs`, il decoratore può gestire funzioni con qualsiasi numero e tipo di argomenti,
 rendendolo più flessibile.
 """
+
+def decoratore(funzione):
+    def wrapper():
+        print(funzione())
+        return funzione
+    return wrapper
+
+@decoratore
+def somma():
+    return 5+7
+
+
+""" my_var = esterna("ciao")
+print(esterna)
+#print(esterna("ciao"))
+print(my_var()) """
+
+
+
+""" print(somma(1,2))
+var = somma #
+print(var(1,2)) """
+
